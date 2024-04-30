@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 // MongoDB Connection
-mongoose.connect( "mongodb+srv://nishi:nishi@cluster0.v0pcshj.mongodb.net/?retryWrites=true&w=majority")
+mongoose.connect( "mongodb+srv://nishi:nishi@cluster0.v0pcshj.mongodb.net/?retryWrites=false&w=majority")
 .then(() => console.log('Connected to MongoDB'))
 .catch(err => console.error('Error connecting to MongoDB:', err));
 
